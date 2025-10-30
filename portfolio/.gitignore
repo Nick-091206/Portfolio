@@ -1,25 +1,49 @@
-*.log
+### OS & Editor
 .DS_Store
-.env
-.env.backup
-.env.production
-.phpactor.json
-.phpunit.result.cache
-/.fleet
+Thumbs.db
+*.swp
+*.swo
 /.idea
-/.nova
-/.phpunit.cache
 /.vscode
+/.fleet
 /.zed
-/auth.json
+
+### Node & Build
 /node_modules
 /public/build
 /public/hot
+/build
+yarn.lock
+pnpm-lock.yaml
+npm-debug.log
+
+### Laravel & PHP
+/vendor
 /public/storage
 /storage/*.key
 /storage/pail
-/vendor
+/.phpunit.result.cache
+/.phpunit.cache
+/.phpactor.json
+/.nova
+/.ide_helper*
+/.phpstorm.meta.php
+composer.lock
+
+### Env & Secrets
+.env
+.env.*.backup
+.env.backup
+.env.production
+auth.json
+
+### Docker & Database
+mysql-data/
+portfolio/mysql-data/
+*.sock
+*.pid
+
+### Overig
 Homestead.json
 Homestead.yaml
-Thumbs.db
-mysql-data/mysql.sock
+*.log
