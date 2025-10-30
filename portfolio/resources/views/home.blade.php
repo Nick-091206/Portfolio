@@ -162,7 +162,7 @@
                         </div>
 
                         <div class="flex gap-4">
-                            <a href="#" class="text-blue-400 hover:underline">GitHub</a>
+                            <a href="https://github.com/Nick-091206/Portfolio" target="_blank" class="text-blue-400 hover:underline">GitHub</a>
                         </div>
                     </div>
                 </div>
