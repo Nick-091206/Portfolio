@@ -6,15 +6,15 @@
         <p class="text-blue-400 text-lg mb-4 font-light">
             Hoi, ik ben
         </p>
-        <h1 class="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 text-white">
+        <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-white">
             Nick Colijn
         </h1>
 
-        <h2 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-gray-400">
+        <h2 class="text-2xl sm:text-3xl md:text-6xl lg:text-7xl font-bold mb-8 text-gray-400">
             <span id="typing-text"></span><span class="typing-cursor">|</span>
         </h2>
 
-        <p class="text-gray-400 text-lg md:text-xl max-w-2xl mb-12 leading-relaxed">
+        <p class="text-gray-400 text-base sm:text-lg md:text-xl max-w-2xl mb-12 leading-relaxed">
             Ik ben software developer met een focus op backend-logica, serverbeheer en schaalbare weboplossingen.
         </p>
 
@@ -27,7 +27,7 @@
 <section id="about" class="flex items-center px-8 md:px-16 lg:px-24 py-32">
     <div class="w-full section-margin">
         <div class="flex items-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-bold whitespace-nowrap">
+            <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold whitespace-nowrap">
                 <span class="text-blue-400 text-2xl font-mono">01.</span>
                 <span class="text-white ml-4">Over mij</span>
             </h2>
@@ -39,15 +39,10 @@
 
                 <div class="space-y-5 text-gray-400 text-[1.35rem] leading-relaxed">
                     <p>
-                        Hello! I'm a passionate software developer with a knack for creating elegant solutions in the least amount of time. I have experience in full-stack development, working with modern technologies to build robust and scalable web applications.
+                       Ik ben Nick, fullstack developer, student op ROC Midden Nederland en mede-eigenaar van Veltex. Bij ons bedrijf ontwikkellen we complete webapplicaties, van frontend design tot backend logica en serverbeheer.
                     </p>
-
                     <p>
-                        My journey in tech started with a curiosity for how things work, and it has evolved into a career where I continuously learn and create. I thrive on turning complex problems into simple, beautiful, and intuitive designs.
-                    </p>
-
-                    <p>
-                        When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good cup of coffee.
+                      Ik werk met tools zoals Laravel, Docker en MySQL, en zorg dat alles snel, veilig en goed schaalbaar is. Naast mijn studie werk ik aan echte projecten voor klanten. We hosten onze applicaties ook zelf, zodat we volledige controle hebben over prestaties, beveiliging en uptime.
                     </p>
                 </div>
             </div>
@@ -55,8 +50,8 @@
             <div class="flex justify-center lg:justify-end">
                 <div class="relative">
                     <div class="rounded-lg overflow-hidden border-4 border-blue-400/50 w-96 h-96">
-                        <img src="{{ Vite::asset('resources/assets/img/foto.jpg') }}" alt="Profile Photo" class="w-full h-full object-cover">
-                    </div>
+                            <img src="{{ asset('img/foto.jpg') }}" alt="Profile Photo" class="w-full h-full object-cover">
+                        </div>
                 </div>
             </div>
         </div>
@@ -67,7 +62,7 @@
     <div class="px-8 md:px-16 lg:px-24">
         <div class="w-full section-margin">
             <div class="flex items-center mb-16 pr-[20%]">
-                <h2 class="text-4xl md:text-5xl font-bold whitespace-nowrap">
+                <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold whitespace-nowrap">
                     <span class="text-blue-400 text-2xl font-mono">02.</span>
                     <span class="text-white ml-4">Projecten</span>
                 </h2>
@@ -81,7 +76,7 @@
             <div class="flex gap-8 overflow-x-auto pb-8 project-scroll">
                 <div class="bg-gray-800 rounded-lg overflow-hidden shrink-0 w-96 snap-center">
                     <div class="h-48 bg-gray-700 flex items-center justify-center overflow-hidden">
-                        <img src="{{ Vite::asset('resources/assets/img/veo.png') }}" alt="VanEderenOntruimingen" class="w-full h-full object-cover">
+                        <img src="{{ asset('img/veo.png') }}" alt="VanEderenOntruimingen" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-white mb-3">vanederenontruimingen.nl</h3>
@@ -103,7 +98,7 @@
 
                 <div class="bg-gray-800 rounded-lg overflow-hidden shrink-0 w-96 snap-center">
                     <div class="h-48 bg-gray-700 flex items-center justify-center overflow-hidden">
-                        <img src="{{ Vite::asset('resources/assets/img/loonstrookje.png') }}" alt="Loonstrookje" class="w-full h-full object-cover">
+                        <img src="{{ asset('img/loonstrookje.png') }}" alt="Loonstrookje" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-white mb-3">Loonstrookje</h3>
@@ -125,7 +120,7 @@
 
                 <div class="bg-gray-800 rounded-lg overflow-hidden shrink-0 w-96 snap-center">
                     <div class="h-48 bg-gray-700 flex items-center justify-center overflow-hidden">
-                        <img src="{{ Vite::asset('resources/assets/img/planetnode.png') }}" alt="Planetnode" class="w-full h-full object-cover">
+                        <img src="{{ asset('img/planetnode.png') }}" alt="Planetnode" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-white mb-3">Planetnode</h3>
@@ -147,7 +142,7 @@
 
                 <div class="bg-gray-800 rounded-lg overflow-hidden shrink-0 w-96 snap-center">
                     <div class="h-48 bg-gray-700 flex items-center justify-center overflow-hidden">
-                        <img src="{{ Vite::asset('resources/assets/img/portfolio.png') }}" alt="Portfolio" class="w-full h-full object-cover">
+                        <img src="{{ asset('img/portfolio.png') }}" alt="Portfolio" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-white mb-3">Portfolio</h3>
@@ -169,7 +164,7 @@
 
                 <div class="bg-gray-800 rounded-lg overflow-hidden shrink-0 w-96 snap-center">
                     <div class="h-48 bg-gray-700 flex items-center justify-center overflow-hidden">
-                        <img src="{{ Vite::asset('resources/assets/img/homelab.png') }}" alt="Real-time Chat" class="w-full h-full object-cover">
+                        <img src="{{ asset('img/homelab.png') }}" alt="Real-time Chat" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-white mb-3">Homelab</h3>
@@ -186,7 +181,7 @@
 
                 <div class="bg-gray-800 rounded-lg overflow-hidden shrink-0 w-96 snap-center">
                     <div class="h-48 bg-gray-700 flex items-center justify-center overflow-hidden">
-                        <img src="{{ Vite::asset('resources/assets/img/stemwijzer.png') }}" alt="Portfolio CMS" class="w-full h-full object-cover">
+                        <img src="{{ asset('img/stemwijzer.png') }}" alt="Portfolio CMS" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-white mb-3">Stemwijzer</h3>
@@ -210,7 +205,7 @@
     <div class="px-8 md:px-16 lg:px-24">
         <div class="w-full section-margin">
             <div class="flex items-center mb-16 pr-[20%]">
-                <h2 class="text-4xl md:text-5xl font-bold whitespace-nowrap">
+                <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold whitespace-nowrap">
                     <span class="text-blue-400 text-2xl font-mono">03.</span>
                     <span class="text-white ml-4">Skills</span>
                 </h2>
@@ -219,66 +214,66 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                 <div>
-                    <h3 class="text-2xl font-bold text-white mb-6">Frameworks & Libraries</h3>
+                    <h3 class="text-xl sm:text-2xl md:text-2xl font-bold text-white mb-6">Frameworks & Libraries</h3>
                     <ul class="space-y-4">
                         <li class="flex items-center text-gray-400 text-lg">
-                            <img src="{{ Vite::asset('resources/assets/img/Tool.svg') }}" alt="Tool icon" class="w-6 h-6 mr-3 inline-block align-middle">
+                            <img src="{{ asset('img/Tool.svg') }}" alt="Tool icon" class="w-6 h-6 mr-3 inline-block align-middle">
                             React & React Native
                         </li>
                         <li class="flex items-center text-gray-400 text-lg">
-                            <img src="{{ Vite::asset('resources/assets/img/Tool.svg') }}" alt="Tool icon" class="w-6 h-6 mr-3 inline-block align-middle">
+                            <img src="{{ asset('img/Tool.svg') }}" alt="Tool icon" class="w-6 h-6 mr-3 inline-block align-middle">
                             Laravel
                         </li>
                         <li class="flex items-center text-gray-400 text-lg">
-                            <img src="{{ Vite::asset('resources/assets/img/Tool.svg') }}" alt="Tool icon" class="w-6 h-6 mr-3 inline-block align-middle">
+                            <img src="{{ asset('img/Tool.svg') }}" alt="Tool icon" class="w-6 h-6 mr-3 inline-block align-middle">
                             Tailwind CSS
                         </li>
                         <li class="flex items-center text-gray-400 text-lg">
-                            <img src="{{ Vite::asset('resources/assets/img/Tool.svg') }}" alt="Tool icon" class="w-6 h-6 mr-3 inline-block align-middle">
+                            <img src="{{ asset('img/Tool.svg') }}" alt="Tool icon" class="w-6 h-6 mr-3 inline-block align-middle">
                             Vue JS
                         </li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="text-2xl font-bold text-white mb-6">Languages</h3>
+                    <h3 class="text-xl sm:text-2xl md:text-2xl font-bold text-white mb-6">Languages</h3>
                     <ul class="space-y-4">
                         <li class="flex items-center text-gray-400 text-lg">
-                            <img src="{{ Vite::asset('resources/assets/img/Code.svg') }}" alt="Code icon" class="w-6 h-6 mr-3 inline-block align-middle">
+                            <img src="{{ asset('img/Code.svg') }}" alt="Code icon" class="w-6 h-6 mr-3 inline-block align-middle">
                             JavaScript
                         </li>
                         <li class="flex items-center text-gray-400 text-lg">
-                            <img src="{{ Vite::asset('resources/assets/img/Code.svg') }}" alt="Code icon" class="w-6 h-6 mr-3 inline-block align-middle">
+                            <img src="{{ asset('img/Code.svg') }}" alt="Code icon" class="w-6 h-6 mr-3 inline-block align-middle">
                             PHP
                         </li>
                         <li class="flex items-center text-gray-400 text-lg">
-                            <img src="{{ Vite::asset('resources/assets/img/Code.svg') }}" alt="Code icon" class="w-6 h-6 mr-3 inline-block align-middle">
+                            <img src="{{ asset('img/Code.svg') }}" alt="Code icon" class="w-6 h-6 mr-3 inline-block align-middle">
                             Python
                         </li>
                         <li class="flex items-center text-gray-400 text-lg">
-                            <img src="{{ Vite::asset('resources/assets/img/Code.svg') }}" alt="Code icon" class="w-6 h-6 mr-3 inline-block align-middle">
+                            <img src="{{ asset('img/Code.svg') }}" alt="Code icon" class="w-6 h-6 mr-3 inline-block align-middle">
                             HTML & CSS
                         </li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="text-2xl font-bold text-white mb-6">Tools</h3>
+                    <h3 class="text-xl sm:text-2xl md:text-2xl font-bold text-white mb-6">Tools</h3>
                     <ul class="space-y-4">
                         <li class="flex items-center text-gray-400 text-lg">
-                            <img src="{{ Vite::asset('resources/assets/img/Terminal.svg') }}" alt="Terminal icon" class="w-6 h-6 mr-3 inline-block align-middle">
+                            <img src="{{ asset('img/Terminal.svg') }}" alt="Terminal icon" class="w-6 h-6 mr-3 inline-block align-middle">
                             Git & GitHub
                         </li>
                         <li class="flex items-center text-gray-400 text-lg">
-                            <img src="{{ Vite::asset('resources/assets/img/Terminal.svg') }}" alt="Terminal icon" class="w-6 h-6 mr-3 inline-block align-middle">
+                            <img src="{{ asset('img/Terminal.svg') }}" alt="Terminal icon" class="w-6 h-6 mr-3 inline-block align-middle">
                             Docker
                         </li>
                         <li class="flex items-center text-gray-400 text-lg">
-                            <img src="{{ Vite::asset('resources/assets/img/Terminal.svg') }}" alt="Terminal icon" class="w-6 h-6 mr-3 inline-block align-middle">
+                            <img src="{{ asset('img/Terminal.svg') }}" alt="Terminal icon" class="w-6 h-6 mr-3 inline-block align-middle">
                             Linux
                         </li>
                         <li class="flex items-center text-gray-400 text-lg">
-                            <img src="{{ Vite::asset('resources/assets/img/Terminal.svg') }}" alt="Terminal icon" class="w-6 h-6 mr-3 inline-block align-middle">
+                            <img src="{{ asset('img/Terminal.svg') }}" alt="Terminal icon" class="w-6 h-6 mr-3 inline-block align-middle">
                             Figma
                         </li>
                     </ul>

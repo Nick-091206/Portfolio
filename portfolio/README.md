@@ -57,3 +57,38 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Per-page SEO (how to override defaults)
+
+This project includes a centralized SEO configuration in `config/seo.php` and a Blade partial `resources/views/partials/seo.blade.php` that renders meta tags, Open Graph, Twitter card and JSON-LD structured data.
+
+To override metadata on a specific page, set Blade sections before the view content. Example in a page view:
+
+```blade
+@section('title', 'Project — My Project Title')
+@section('description', 'A short page-specific description used for meta and social cards.')
+@section('image', url('/img/projects/project-hero.png'))
+@section('url', url()->current())
+
+@extends('layouts.app')
+
+@section('content')
+	<!-- Page content -->
+@endsection
+```
+
+If you don't provide a section, the values from `config/seo.php` will be used as fallbacks.
+
+### LinkedIn / social profiles
+
+You mentioned you use LinkedIn and not Twitter. You can set your public social URLs in your `.env` so they are included in the JSON-LD `sameAs` array. Add these (only the ones you use):
+
+```env
+# .env
+SEO_LINKEDIN=https://www.linkedin.com/in/your-profile
+# Optional: other social profiles
+SEO_GITHUB=https://github.com/your-username
+SEO_INSTAGRAM=https://www.instagram.com/your-username
+```
+
+If `SEO_LINKEDIN` is set the URL will be included in your site's structured data; if it's empty it will be ignored. There's no Twitter handle by default unless you set `SEO_TWITTER` in your `.env`.
